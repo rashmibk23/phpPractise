@@ -1,0 +1,54 @@
+body {
+    background: rgb(206, 204, 204);
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.form-box {
+    background: white;
+    margin: 30px auto auto auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 30%;
+    padding: 20px;
+    border-radius: 4px; 
+}
+
+.form-box h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.input-field {
+   margin: 10px;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+
+.input-field input {
+    padding: 10px;
+    
+}
+
+.input-gender {
+    margin: 10px;
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: center; */
+    
+}
+.submit-btn {
+    display: block;
+    margin: 15px auto 10px auto;
+    background: rgb(81, 50, 255);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+}
+
+.error {
+    color: red;
+}
