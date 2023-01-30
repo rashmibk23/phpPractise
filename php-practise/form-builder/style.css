@@ -1,0 +1,254 @@
+*  {
+    margin: 0;
+}
+body {
+    
+    background: rgb(241, 245, 249);
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.navbar {
+    padding: 15px 20px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(231, 235, 240);
+}
+
+img {
+    width: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.license-style {
+    color: white;
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.link-style {
+    padding: 10px 20px;
+    background: rgb(241, 245, 249);
+    border-radius: 20px;
+}
+
+.license-style {
+    padding: 10px 20px;
+    background: rgb(9, 158, 9);
+    border-radius: 20px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 23rem auto 23rem;
+    /* gap: 15px; */
+    column-gap: 10px; 
+}
+
+.left-container {
+    /* background: pink; */
+    background: white;
+}
+.middle-container {
+    /* background: skyblue; */
+}
+.right-container {
+    /* background: palegreen; */
+    background: white;
+}
+
+.leftcontainer-tab {
+    display: flex;
+}
+
+.leftcontainer-tab .btn {
+    background: rgb(241, 245, 249);
+    border: none;
+    padding: 14px 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.leftcontainer-tab button.active {
+    background: white;
+}
+
+.left-container-top {
+    padding: 5px 20px;
+}
+
+.card-container {
+    padding: 0 20px;
+}
+
+.search-field {
+    margin: 15px 0px;
+    border-radius: 5px;
+    background: rgb(241, 245, 249);
+    display: flex;
+    align-items: center;
+}
+.search-field input {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background: transparent;
+}
+
+.search-field span {
+    padding: 0 6px;
+    color: gray;
+}
+
+.elements-tab {
+    display: flex;
+    /* gap: 2px; */
+    margin-bottom: 16px;
+    
+}
+.tabBtn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+
+.elements-tab button.active {
+    background: rgb(241, 245, 249);
+}
+
+.fields-btn {
+    border-top: 1px solid rgb(198, 202, 206);
+    border-bottom: 1px solid rgb(198, 202, 206);
+    border-left: 1px solid rgb(198, 202, 206);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.static-btn {
+    border: 1px solid rgb(198, 202, 206);
+}
+
+.structure-btn {
+    border-top: 1px solid rgb(198, 202, 206);
+    border-bottom: 1px solid rgb(198, 202, 206);
+    border-right: 1px solid rgb(198, 202, 206);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* background: pink; */
+    padding: 8px 5px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(241, 245, 249);
+    border-radius: 5px;
+}
+
+.card .img-box {
+    background: rgb(234, 238, 241);
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.rightcontainer-tab {
+    display: flex;
+}
+
+.rightcontainer-tab .btn {
+    /* border: 1px solid rgb(198, 202, 206); */
+    border: none;
+    background: rgb(241, 245, 249);
+    padding: 14px 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.rightcontainer-tab button.active {
+    background: white;
+    border: none;
+}
+
+.rc-tab-content {
+    padding: 0 20px;
+}
+
+.rc-form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(245, 249, 255);
+    padding: 8px 20px;
+    margin:  0 -20px;
+    border-top: 1px solid rgb(236, 239, 243);
+    border-bottom: 1px solid rgb(236, 239, 243);
+}
+
+.rc-form-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.rc-form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 10px 0;
+    gap: 4px;
+}
+
+.form-row-icon {
+    display: flex;
+    align-items: center;
+}
+
+.form-row-icon span {
+    font-size: 14px;
+}
+
+.rc-form-row input {
+    padding: 8px;
+    background: rgb(241, 245, 249);
+    border: 1px solid rgb(198, 202, 206);
+    border-radius: 5px;
+}
+
+.rc-form-row input[type=number] {
+    width: 30%;
+}
