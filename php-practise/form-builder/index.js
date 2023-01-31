@@ -73,3 +73,39 @@ document.getElementById("defaultOpen1").click();
     evt.currentTarget.className += " active";
   }
   document.getElementById("defaultOpen3").click();
+
+
+// Toggle Content
+  function togglePropertiesContent() {
+    var x = document.getElementById("form-text1");
+    if(x.style.display == "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none"
+    }
+  }
+
+  function toggleSubmissionContent() {
+    var x = document.getElementById("form-text2");
+    if(x.style.display == "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none"
+    }
+  }
+
+
+  // Drag and Drop
+  function allowDrop(ev) {
+    ev.preventDefault();
+  }
+
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+  
+  function drop(ev, el) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }

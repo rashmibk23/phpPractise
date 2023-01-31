@@ -10,6 +10,7 @@
 </head>
 <body>
     <div>
+        <!-- Navigation Bar -->
         <div class="navbar">
             <div class="logo">
                 <img src="./images/logo.png" alt="logo">
@@ -29,7 +30,9 @@
             </ul>
         </div>
         
+        <!-- Main content -->
         <div class="content-grid">
+            <!-- Left Container -->
             <div class="left-container">
 
                 <!-- Tabs -->
@@ -41,7 +44,6 @@
                 <!-- Tab content -->
                 <!-- Elements tab content -->
                 <div id="Elements" class="leftTabContent">
-                    <div class="section1-container">
                         <div class="left-container-top">
                             <div class="search-field">
                                 <span class="material-symbols-outlined">
@@ -64,7 +66,7 @@
                         <!-- 1st Tab content (Field) -->
                         <div  id="Fields" class="elementsTabcontent">
                             <div class="card-container">
-                            <div class="card">
+                            <div id="drag1" class="card" draggable="true" ondragstart="drag(event)">
                                 <span class="material-symbols-outlined img-box">
                                     text_fields
                                 </span>
@@ -73,7 +75,7 @@
                                     <small><p>Single line text input</p></small>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" id="drag2" draggable="true" ondragstart="drag(event)">
                                 <span class="material-symbols-outlined img-box">
                                     pin
                                 </span>
@@ -82,7 +84,7 @@
                                     <small><p>Input field that only allows numbers</p></small>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" id="drag3" draggable="true" ondragstart="drag(event)">
                                 <span class="material-symbols-outlined img-box">
                                     alternate_email
                                 </span>
@@ -91,7 +93,7 @@
                                     <small><p>Text field that excepts an email</p></small>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" id="drag4" draggable="true" ondragstart="drag(event)">
                                 <span class="material-symbols-outlined img-box">
                                     call
                                 </span>
@@ -100,7 +102,7 @@
                                     <small><p>Text field that excepts a phone number</p></small>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" id="drag5" draggable="true" ondragstart="drag(event)">
                                 <span class="material-symbols-outlined img-box">
                                     lock
                                 </span>
@@ -109,7 +111,7 @@
                                     <small><p>Text field that excepts a password</p></small>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" id="drag6" draggable="true" ondragstart="drag(event)">
                                 <span class="material-symbols-outlined img-box">
                                     link
                                 </span>
@@ -125,7 +127,7 @@
                         <!-- 2nd Tab content (Static) -->
                         <div id="Static" class="elementsTabcontent">
                             <div class="card-container">
-                                <div class="card">
+                                <div class="card" id="drag7" draggable="true" ondragstart="drag(event)">
                                     <span class="material-symbols-outlined img-box">
                                         done
                                     </span>
@@ -134,7 +136,7 @@
                                         <small><p>Button that triggers submit</p></small>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card" id="drag8" draggable="true" ondragstart="drag(event)">
                                 <span class="material-symbols-outlined img-box">
                                     cached
                                 </span>
@@ -143,7 +145,7 @@
                                         <small><p>Button that triggers reset</p></small>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card" id="drag9" draggable="true" ondragstart="drag(event)">
                                 <span class="material-symbols-outlined img-box">
                                     star
                                 </span>
@@ -160,7 +162,7 @@
                         <!-- 3rd Tab conent (Structure) -->
                         <div id="Structure" class="elementsTabcontent">
                             <div class="card-container">
-                                <div class="card">
+                                <div class="card" id="drag10" draggable="true" ondragstart="drag(event)">
                                     <span class="material-symbols-outlined img-box">
                                         tab
                                     </span>
@@ -169,7 +171,7 @@
                                         <small><p>Break forms into tabs</p></small>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card" id="drag11" draggable="true" ondragstart="drag(event)">
                                     <span class="material-symbols-outlined img-box">
                                         insert_page_break
                                     </span>
@@ -178,7 +180,7 @@
                                         <small><p>Break forms into steps</p></small>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card" id="drag12" draggable="true" ondragstart="drag(event)">
                                     <span class="material-symbols-outlined img-box">
                                         check_box_outline_blank
                                     </span>
@@ -190,31 +192,28 @@
                             </div>
                             
                         </div>
-                    </div>
                 </div>
 
                 <!-- Tab content -->
                 <!-- Tree tab content -->
                 
                 <div id="Tree" class="leftTabContent">
-                    <div class="section1-container">
-                        <div class="left-container-top">
-                            <div class="search-field">
-                                <span class="material-symbols-outlined">
-                                    search
-                                </span>
-                                <input type="text" placeholder="Search tree">
-                            </div>
+                    <div class="left-container-top">
+                        <div class="search-field">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                            <input type="text" placeholder="Search tree">
                         </div>
+                    </div>
                         
-                        <div class="card-container">
-                            <div class="card">
-                                <span class="material-symbols-outlined img-box">
-                                    article
-                                </span>
-                                <div class="card-text">
-                                    <h4>MyForm</h4>
-                                </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <span class="material-symbols-outlined img-box">
+                                article
+                            </span>
+                            <div class="card-text">
+                                <h4>MyForm</h4>
                             </div>
                         </div>
                     </div>
@@ -223,12 +222,15 @@
                    
             </div>
 
-            <!-- center-container -->
+            <!-- Middle-container -->
             <div class="middle-container">
-                <p>middle container</p>
+            <b><p>Drag and Drop</p></b> 
+                <div class="content-area" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+
+                </div>
             </div>
 
-            <!-- right-container -->
+            <!-- Right-container -->
             <div class="right-container">
                 <!-- Right container Tabs -->
                <div class="rightcontainer-tab">
@@ -242,57 +244,146 @@
                <div id="Settings" class="rightTabContent">
                     <div>
                         <div class="rc-tab-content">
-                            <div class="rc-form-header">
-                                <h4>Properties</h4>
-                                <span class="material-symbols-outlined">
-                                    remove
-                                </span>
-                            </div>
-                            <div class="rc-form-text">
-                                <div class="rc-form-row">
-                                    <small><label for="">Name</label></small>
-                                    <input type="text" name="name" placeholder="My form">
+                            <!-- <form> -->
+                                <div class="rc-form-header">
+                                    <h4>Properties</h4>
+                                    <span class="material-symbols-outlined" onclick="togglePropertiesContent()">
+                                        remove
+                                    </span>
                                 </div>
-                                <div class="rc-form-row">
-                                    <div class="form-row-icon">
-                                        <small><label for="">Preview width</label></small>
-                                        <span class="material-symbols-outlined">
-                                            info
-                                        </span>
+                                <div class="rc-form-text" id="form-text1">
+                                    <div class="rc-form-row">
+                                        <small><label for="">Name</label></small>
+                                        <input type="text" name="name" placeholder="My form">
                                     </div>
-                                    <div  class="rc-form-row">
-                                        <input type="checkbox">
-                                        <small><label for="">Full</label></small>
+                                    <div class="rc-form-row">
+                                        <div class="form-row-icon">
+                                            <small><label for="">Preview width</label></small>
+                                            <span class="material-symbols-outlined">
+                                                info
+                                            </span>
+                                        </div>
+                                        <div class="rc-form-row">
+                                            <input type="checkbox">
+                                            <small><label for="">Full</label></small>
+                                        </div>
+                                        <input type="number" name="preview">
                                     </div>
-                                    <input type="number" name="preview" style: width="10%">
+                                    <div class="rc-form-row">
+                                        <div class="form-row-icon">
+                                            <small><label for="">Nesting</label></small>
+                                            <span class="material-symbols-outlined">
+                                                info
+                                            </span>
+                                        </div>
+                                        
+                                    </div>  
                                 </div>
-                                <div class="rc-form-row">
-                                    <div class="form-row-icon">
-                                        <small><label for="">Nesting</label></small>
-                                        <span class="material-symbols-outlined">
-                                            info
-                                        </span>
-                                    </div>
-                                    
-                                </div>  
-                            </div>
 
-                            <div class="rc-form-header">
-                                <h4>Submission</h4>
-                                <span class="material-symbols-outlined">
-                                    remove
-                                </span>
-                            </div>
+                                <div class="rc-form-header">
+                                    <h4>Submission</h4>
+                                    <span class="material-symbols-outlined" onclick="toggleSubmissionContent()">
+                                        remove
+                                    </span>
+                                </div>
+                                <div class="rc-form-text" id="form-text2">
+                                    <div class="rc-form-row">
+                                        <input type="text" placeholder="Endpoint (default)">
+                                        <select name="method" id="method">
+                                            <option value="">method</option>
+                                            <option value="default">default</option>
+                                            <option value="post">POST</option>
+                                            <option value="get">GET</option>
+                                            <option value="put">PUT</option>
+                                            <option value="patch">PATCH</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            <!-- </form> -->
                         </div>
                     </div>
                </div>
 
+               <!-- Theme tab content -->
                <div id="Theme" class="rightTabContent">
-                    <h3>Theme content</h3>
+                    <div class="rc-tab-content">
+                        <!-- <form> -->
+                            <div class="rc-form-header">
+                                <h4>Theme</h4>
+                            </div>
+                            <div class="rc-form-text">
+                                <div class="rc-form-row">
+                                    <small><label for="">Theme</label></small>
+                                    <div class="form-input-grid">
+                                        <input type="text" placeholder="Name">
+                                        <button class="form-btn">Save</button>
+                                    </div>
+                                </div>
+
+                                <div class="rc-form-row">
+                                    <small><label for="">Load theme</label></small>
+                                    <div class="form-input-grid">
+                                        <input type="text" placeholder="Theme">
+                                        <button class="form-btn">Load</button>
+                                    </div>
+                                </div>   
+                            </div>
+
+                            <div class="rc-form-text">
+                                <div class="rc-button-container">
+                                    <button class="row-btn sm-btn">sm</button>
+                                    <button class="row-btn md-btn">md</button>
+                                    <button class="row-btn lg-btn">lg</button>
+                                </div>
+                            </div>
+
+                            <div class="rc-form-header">
+                                <h4>Colors</h4>
+                                <span class="material-symbols-outlined" onclick="toggleContent()">
+                                    remove
+                                </span>
+                            </div>
+                            
+                        <!-- </form> -->
+                    </div>
                </div>
 
+               <!-- Export tab content -->
                <div id="Export" class="rightTabContent">
-                    <h3>Export content</h3>
+                <div class="rc-tab-content">
+                    <div class="rc-form-header">
+                        <h4>Export Settings</h4>
+                    </div>
+                    <div class="rc-form-text">
+                        <div class="rc-form-row">
+                            <label for="output"><small>Output</small></label>
+                            <select name="output" id="output">
+                                <option value="opt1">Inline</option>
+                                <option value="opt2">Schema Object</option>
+                                <option value="opt3">Single File Component</option>
+                            </select>
+                        </div>
+                        <div class="rc-form-row">
+                            <label for="api"><small>API</small></label>
+                            <select name="api" id="api">
+                                <option value="">Options API</option>
+                                <option value="">Composition API</option>
+                            </select>
+                        </div>
+                        <div class="rc-form-row">
+                            <label for=""><small>Theme</small></label>
+                            <div class="rc-export-button">
+                                <button class="btn-style none-btn">None</button>
+                                <button class="btn-style local-btn">Local</button>
+                                <button class="btn-style global-btn">Global</button>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <button class="download-btn">Download</button>
+                </div>
+                   
                </div>
             </div>
         </div>

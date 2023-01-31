@@ -55,6 +55,7 @@ a {
     padding: 10px 20px;
     background: rgb(241, 245, 249);
     border-radius: 20px;
+    border: none;
 }
 
 .license-style {
@@ -74,9 +75,9 @@ a {
     /* background: pink; */
     background: white;
 }
-.middle-container {
-    /* background: skyblue; */
-}
+/* .middle-container {
+    background: skyblue;
+} */
 .right-container {
     /* background: palegreen; */
     background: white;
@@ -172,6 +173,11 @@ a {
     margin-bottom: 10px;
     border: 1px solid rgb(241, 245, 249);
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background: rgb(241, 248, 255);
 }
 
 .card .img-box {
@@ -186,12 +192,26 @@ a {
     gap: 4px;
 }
 
+.content-area {
+    width: 70%;
+    min-height: 50%;
+    height: auto;
+    padding: 10px;
+    background: white;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+.middle-container p {
+    text-align: center;
+    margin: 10px 0;
+}
+
 .rightcontainer-tab {
     display: flex;
 }
 
 .rightcontainer-tab .btn {
-    /* border: 1px solid rgb(198, 202, 206); */
     border: none;
     background: rgb(241, 245, 249);
     padding: 14px 16px;
@@ -204,9 +224,9 @@ a {
     border: none;
 }
 
-.rc-tab-content {
+/* .rc-tab-content {
     padding: 0 20px;
-}
+} */
 
 .rc-form-header {
     display: flex;
@@ -214,14 +234,20 @@ a {
     justify-content: space-between;
     background: rgb(245, 249, 255);
     padding: 8px 20px;
-    margin:  0 -20px;
-    border-top: 1px solid rgb(236, 239, 243);
+    /* margin:  0 -20px; */
+    /* border-top: 1px solid rgb(236, 239, 243); */
     border-bottom: 1px solid rgb(236, 239, 243);
+}
+
+.rc-form-header span {
+    cursor: pointer;
 }
 
 .rc-form-text {
     display: flex;
     flex-direction: column;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(236, 239, 243);
 }
 
 .rc-form-row {
@@ -229,13 +255,14 @@ a {
     align-items: center;
     justify-content: space-between;
     background: white;
-    padding: 10px 0;
+    padding: 6px 0;
     gap: 4px;
 }
 
 .form-row-icon {
     display: flex;
     align-items: center;
+    column-gap: 2px;
 }
 
 .form-row-icon span {
@@ -252,3 +279,86 @@ a {
 .rc-form-row input[type=number] {
     width: 30%;
 }
+
+.form-input-grid {
+    display: grid;
+    grid-template-columns: 8rem 4rem;
+    column-gap: 5px;
+}
+
+ .form-btn {
+    background: green;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.rc-button-container {
+    display: flex;
+}
+
+ .row-btn {
+    padding: 8px 6px;
+    width: 100%;
+    background: white;
+    border: 1px solid green;
+    color: green;
+}
+
+.sm-btn {
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.lg-btn {
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.rc-form-row select {
+    background: rgb(241, 245, 249);
+    border: 1px solid rgb(198, 202, 206);
+    border-radius: 5px;
+    padding: 7px;
+    width: 55%;
+}
+
+.rc-export-button {
+    display: flex;
+    width: 55%;
+} 
+
+.btn-style {
+    padding: 8px 6px;
+    width: 100%;
+    background: rgb(241, 245, 249);
+    border: 1px solid rgb(198, 202, 206);
+}
+
+.none-btn {
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.global-btn {
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.download-btn {
+    background: green;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 5px;
+}
+
+
